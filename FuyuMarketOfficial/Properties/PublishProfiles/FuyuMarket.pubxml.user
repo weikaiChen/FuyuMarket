@@ -16,10 +16,10 @@
       <publishTime>09/29/2019 17:00:44</publishTime>
     </File>
     <File Include="bin/FuyuMarketOfficial.dll">
-      <publishTime>10/12/2019 04:49:02</publishTime>
+      <publishTime>10/15/2019 00:05:42</publishTime>
     </File>
     <File Include="bin/FuyuMarketOfficial.pdb">
-      <publishTime>10/12/2019 04:49:02</publishTime>
+      <publishTime>10/15/2019 00:05:42</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>09/29/2019 17:00:44</publishTime>
@@ -85,7 +85,7 @@
       <publishTime>05/11/2018 05:23:38</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
-      <publishTime>09/29/2019 17:13:29</publishTime>
+      <publishTime>10/14/2019 01:08:31</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css">
       <publishTime>04/09/2018 09:00:22</publishTime>
@@ -351,8 +351,17 @@
     <File Include="js/scrollax.min.js">
       <publishTime>10/10/2019 15:53:17</publishTime>
     </File>
+    <File Include="locales/translation.en.json">
+      <publishTime>10/14/2019 00:03:39</publishTime>
+    </File>
+    <File Include="locales/translation.zh-cn.json">
+      <publishTime>10/14/2019 23:58:14</publishTime>
+    </File>
+    <File Include="locales/translation.zh-TW.json">
+      <publishTime>10/14/2019 06:08:55</publishTime>
+    </File>
     <File Include="packages.config">
-      <publishTime>09/29/2019 17:00:46</publishTime>
+      <publishTime>10/14/2019 05:06:27</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>09/29/2019 17:17:20</publishTime>
@@ -362,6 +371,12 @@
     </File>
     <File Include="Scripts/carousel.js">
       <publishTime>09/29/2019 17:04:05</publishTime>
+    </File>
+    <File Include="Scripts/i18next-1.8.0.js">
+      <publishTime>10/13/2019 23:24:38</publishTime>
+    </File>
+    <File Include="Scripts/i18next-1.8.0.min.js">
+      <publishTime>10/13/2019 23:24:38</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>09/29/2019 17:00:42</publishTime>
@@ -377,6 +392,12 @@
     </File>
     <File Include="Scripts/jquery-3.4.1.min.js">
       <publishTime>09/29/2019 17:15:49</publishTime>
+    </File>
+    <File Include="Scripts/jquery.cookie-1.4.1.min.js">
+      <publishTime>10/14/2019 05:06:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery.cookie.js">
+      <publishTime>10/14/2019 05:06:27</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.js">
       <publishTime>09/29/2019 17:00:45</publishTime>
@@ -403,31 +424,34 @@
       <publishTime>09/29/2019 17:15:22</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
-      <publishTime>10/10/2019 19:32:26</publishTime>
+      <publishTime>10/14/2019 03:49:29</publishTime>
     </File>
     <File Include="Views/Home/ChairmanMessage.cshtml">
-      <publishTime>10/12/2019 04:07:00</publishTime>
+      <publishTime>10/14/2019 04:06:58</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
       <publishTime>09/29/2019 17:02:53</publishTime>
     </File>
     <File Include="Views/Home/Foreword.cshtml">
-      <publishTime>10/11/2019 21:27:58</publishTime>
+      <publishTime>10/14/2019 04:14:16</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>10/12/2019 04:48:29</publishTime>
+      <publishTime>10/14/2019 03:52:35</publishTime>
+    </File>
+    <File Include="Views/Home/MainPage.cshtml">
+      <publishTime>10/14/2019 06:07:22</publishTime>
     </File>
     <File Include="Views/Home/TestIndex.cshtml">
       <publishTime>10/10/2019 15:24:58</publishTime>
     </File>
     <File Include="Views/Home/Video.cshtml">
-      <publishTime>10/10/2019 19:09:37</publishTime>
+      <publishTime>10/14/2019 04:17:19</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>09/29/2019 17:00:39</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>10/10/2019 19:28:30</publishTime>
+      <publishTime>10/14/2019 23:58:09</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>09/29/2019 17:00:39</publishTime>
@@ -436,7 +460,7 @@
       <publishTime>09/29/2019 17:00:39</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/10/2019 19:32:49</publishTime>
+      <publishTime>10/14/2019 06:01:45</publishTime>
     </File>
   </ItemGroup>
 </Project>

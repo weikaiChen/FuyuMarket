@@ -10,7 +10,8 @@ namespace FuyuMarketOfficial.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("MainPage", "Home", null);
+
         }
 
         public ActionResult About()
@@ -46,6 +47,12 @@ namespace FuyuMarketOfficial.Controllers
         }
 
         public ActionResult TestIndex()
+        {
+
+            return View();
+        }
+
+        public ActionResult MainPage()
         {
 
             return View();

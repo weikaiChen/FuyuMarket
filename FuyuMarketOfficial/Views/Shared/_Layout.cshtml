@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>馥裕國際事業股份有限公司</title>
+    <title data-i18n="app.companyFullName">馥裕国际事业股份有限公司</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/Content/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="~/Content/animate.css">
@@ -15,9 +15,13 @@
     <link rel="stylesheet" href="~/Content/aos.css">
     <link rel="stylesheet" href="~/Content/ionicons.min.css">
 
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/Content/flaticon.css">
     <link rel="stylesheet" href="~/Content/icomoon.css">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/Content/style.css">
+
+
 </head>
 <body>
     <div class="bg-top navbar-light">
@@ -25,7 +29,7 @@
             <div class="row no-gutters d-flex align-items-center align-items-stretch">
                 <img src="~/img/Logo.jpg" />
                 <div class="col-md-4 d-flex align-items-center py-4">
-                    @Html.ActionLink("馥裕國際事業股份有限公司", "Index", "Home", null, new { @class = "navbar-brand" })
+                    <a href='@Url.Action("Index","Home")' class="navbar-brand" data-i18n="app.companyFullName">馥裕国际事业股份有限公司</a>
                 </div>
 
             </div>
@@ -40,28 +44,38 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">@Html.ActionLink("首頁", "Index", "Home", null, new { @class = "nav-link pl-0" })</li>
-                    <li class="nav-item">@Html.ActionLink("前言", "Foreword", "Home", null, new { @class = "nav-link pl-0" })</li>
-                    <li class="nav-item">@Html.ActionLink("董事長的話", "ChairmanMessage", "Home", null, new { @class = "nav-link pl-0" })</li>
-                    <li class="nav-item">@Html.ActionLink("關於馥裕", "About", "Home", null, new { @class = "nav-link pl-0" })</li>
-                    <li class="nav-item">@Html.ActionLink("活動影片", "Video", "Home", null, new { @class = "nav-link pl-0" })</li>
+                    <li class="nav-item"><a href='@Url.Action("Index","Home")' class="nav-link pl-0" data-i18n="app.home">首页</a></li>
+                    <li class="nav-item"><a href='@Url.Action("Foreword","Home")' class="nav-link pl-0" data-i18n="app.foreword">前言</a></li>
+                    <li class="nav-item"><a href='@Url.Action("ChairmanMessage","Home")' class="nav-link pl-0" data-i18n="app.chairmanMessage">董事长的话</a></li>
+                    <li class="nav-item"><a href='@Url.Action("About","Home")' class="nav-link pl-0" data-i18n="app.aboutFuyu">关于馥裕</a></li>
+                    <li class="nav-item"><a href='@Url.Action("Video","Home")' class="nav-link pl-0" data-i18n="app.activityVideo">活动影片</a></li>
                 </ul>
+
+            </div>
+            <div class="btn-group" data-toggle="buttons">
+                <label id="simplified" class="btn btn-primary" data-i18n="app.simplified" onclick="LanguageTransfer('zh-cn')">
+                    简体
+                </label>
+                <label id="traditional" class="btn btn-primary" data-i18n="app.traditional" onclick="LanguageTransfer('zh-TW')">
+                    繁体
+                </label>
             </div>
         </div>
+
     </nav>
 
     <div class="container body-content">
-        @RenderBody()<br/>
+        @RenderBody()<br />
         <footer class="ftco-footer ftco-bg-dark ftco-section">
             <div class="container">
                 <div class="row mb-3">
                     <div class="col-md-6 col-lg-3">
                         <div class="ftco-footer-widget mb-5">
-                            <h2 class="ftco-heading-2">連絡我們</h2>
+                            <h2 class="ftco-heading-2" data-i18n="app.contactUs">连络我们</h2>
                             <div class="block-23 mb-3">
                                 <ul>
-                                    <li><span class="icon icon-map-marker"></span><span class="text">公司地址:台北市中山區林森北路452號9樓之8</span></li>
-                                    <li><span class="icon icon-phone"></span><span class="text">聯絡電話:02-25210101</span></a></li>
+                                    <li><span class="icon icon-map-marker"></span><span class="text" data-i18n="app.companyAddr1">公司地址:台北市中山区林森北路452号9楼之8</span></li>
+                                    <li><span class="icon icon-phone"></span><span class="text" data-i18n="app.contactTel1">联络电话:02-25210101</span></a></li>
                                     <li><span class="icon icon-envelope"></span><span class="text">fuyuMarketingTsai@gmail.com</span></a></li>
                                 </ul>
                             </div>
@@ -70,13 +84,13 @@
 
                     <div class="col-md-6 col-lg-3">
                         <div class="ftco-footer-widget mb-5 ml-md-4">
-                            <h2 class="ftco-heading-2">連結</h2>
+                            <h2 class="ftco-heading-2" data-i18n="app.connection">连结</h2>
                             <ul class="list-unstyled">
-                                <li>@Html.ActionLink("首頁", "Index", "Home")</li>
-                                <li>@Html.ActionLink("前言", "Foreword", "Home")</li>
-                                <li>@Html.ActionLink("董事長的話", "ChairmanMessage", "Home")</li>
-                                <li>@Html.ActionLink("關於馥裕", "About", "Home")</li>
-                                <li>@Html.ActionLink("活動影片", "Video", "Home")</li>
+                                <li><a href='@Url.Action("Index","Home")' class="nav-link pl-0" data-i18n="app.home">首页</a></li>
+                                <li><a href='@Url.Action("Foreword","Home")' class="nav-link pl-0" data-i18n="app.foreword">前言</a></li>
+                                <li><a href='@Url.Action("ChairmanMessage","Home")' class="nav-link pl-0" data-i18n="app.chairmanMessage">董事长的话</a></li>
+                                <li><a href='@Url.Action("About","Home")' class="nav-link pl-0" data-i18n="app.aboutFuyu">关于馥裕</a></li>
+                                <li><a href='@Url.Action("Video","Home")' class="nav-link pl-0" data-i18n="app.activityVideo">活动影片</a></li>
                             </ul>
                         </div>
                     </div>
@@ -99,5 +113,83 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="~/js/google-map.js"></script>
     <script src="~/js/main.js"></script>
+    <script src="~/Scripts/i18next-1.8.0.min.js"></script>
+    <script src="~/Scripts/jquery.cookie.js"></script>
+    <script language="javascript">
+        var _langSetName = 'myLanguageSet';
+        var _lang = $.cookie(_langSetName);
+        $(document).ready(function () {
+            if (_lang == null || _lang.trim() == '') {
+                _lang = 'zh-cn'; //預設簡体
+                $.cookie(_langSetName, _lang, { path: '/Home', expires: 30 });  //儲存cookie語系
+                // SetCookie(_langSetName, _lang, 30);
+            }
+            if (_lang != null) {
+                i18n.init({
+                    resGetPath: '/locales/translation.__lng__.json',
+                    lng: _lang,
+                    fallbackLng: _lang
+                },
+                    function (t) {
+                        $("body").i18n();
+                        SetLangBtn(_lang); //設定語系按鈕
+                    });
+            }
+           
+
+        });
+        function LanguageTransfer(lang) {
+            _lang = lang;
+
+            i18n.init({
+                resGetPath: '/locales/translation.__lng__.json',
+                lng: _lang,
+                fallbackLng: _lang
+            },
+                function (t) {
+                    $("body").i18n();
+                    if (_lang != null) {
+                        $.cookie(_langSetName, null);
+                    }
+                    $.cookie(_langSetName, _lang, { path: '/Home', expires: 30 });  //儲存cookie語系 SetCookie(_langSetName, _lang, 30); //儲存cookie語系
+                    SetLangBtn(_lang); //設定語系按鈕
+                });
+        }
+
+        //function getCookie(cookieName) {
+        //    var name = cookieName + "=";
+        //    var ca = document.cookie.split(';');
+        //    for (var i = 0; i < ca.length; i++) {
+        //        var c = ca[i];
+        //        while (c.charAt(0) == ' ') c = c.substring(1);
+        //        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+        //    }
+        //    return "";
+        //}
+
+        //function SetCookie(cookieName, cookieValue, exdays) {
+        //    if (document.cookie.indexOf(cookieName) >= 0) {
+        //        var expD = new Date();
+        //        expD.setTime(expD.getTime() + (-1 * 24 * 60 * 60 * 1000));
+        //        var uexpires = "expires=" + expD.toUTCString();
+        //        document.cookie = cookieName + "=" + cookieValue + "; " + uexpires;
+        //    }
+        //    var d = new Date();
+        //    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        //    var expires = "expires=" + d.toUTCString();
+        //    document.cookie = cookieName + "=" + cookieValue + "; " + expires;
+        //}
+
+        function SetLangBtn(lang) {
+            if (lang == 'zh-cn') {
+                $('#simplified').addClass('active');
+                $('#traditional').removeClass('active');
+            }
+            else {
+                $('#simplified').removeClass('active');
+                $('#traditional').addClass('active');
+            }
+        }
+    </script>
 </body>
 </html>
