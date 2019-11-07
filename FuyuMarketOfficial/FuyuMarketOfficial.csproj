@@ -156,6 +156,10 @@
     <Content Include="img\Index_Head1.jpg" />
     <Content Include="img\Index_Head2.jpg" />
     <Content Include="img\ChairemanSign.png" />
+    <Content Include="img\worldmap.jpg" />
+    <Content Include="img\worldmap.png" />
+    <Content Include="img\worldmap2.png" />
+    <Content Include="img\worldmap3.png" />
     <Content Include="js\aos.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\google-map.js" />
@@ -293,6 +297,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
+      <UserProperties locales_4translation_1en_1json__JSONSchema="x`" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -18,7 +18,8 @@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/Content/flaticon.css">
     <link rel="stylesheet" href="~/Content/icomoon.css">
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+
     <link rel="stylesheet" href="~/Content/style.css">
 
 
@@ -59,6 +60,9 @@
                 <label id="traditional" class="btn btn-primary" data-i18n="app.traditional" onclick="LanguageTransfer('zh-TW')">
                     繁体
                 </label>
+                <label id="english" class="btn btn-primary" data-i18n="app.English" onclick="LanguageTransfer('en')">
+                    英文
+                </label>
             </div>
         </div>
 
@@ -69,9 +73,9 @@
         <footer class="ftco-footer ftco-bg-dark ftco-section">
             <div class="container">
                 <div class="row mb-3">
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-12 col-lg-12">
                         <div class="ftco-footer-widget mb-5">
-                            <h2 class="ftco-heading-2" data-i18n="app.contactUs">连络我们</h2>
+                            <h2 class="ftco-heading-1" data-i18n="app.contactUs">连络我们</h2>
                             <div class="block-23 mb-3">
                                 <ul>
                                     <li><span class="icon icon-map-marker"></span><span class="text" data-i18n="app.companyAddr1">公司地址:台北市中山区林森北路452号9楼之8</span></li>
@@ -81,19 +85,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-6 col-lg-3">
-                        <div class="ftco-footer-widget mb-5 ml-md-4">
-                            <h2 class="ftco-heading-2" data-i18n="app.connection">连结</h2>
-                            <ul class="list-unstyled">
-                                <li><a href='@Url.Action("Index","Home")' class="nav-link pl-0" data-i18n="app.home">首页</a></li>
-                                <li><a href='@Url.Action("Foreword","Home")' class="nav-link pl-0" data-i18n="app.foreword">前言</a></li>
-                                <li><a href='@Url.Action("ChairmanMessage","Home")' class="nav-link pl-0" data-i18n="app.chairmanMessage">董事长的话</a></li>
-                                <li><a href='@Url.Action("About","Home")' class="nav-link pl-0" data-i18n="app.aboutFuyu">关于馥裕</a></li>
-                                <li><a href='@Url.Action("Video","Home")' class="nav-link pl-0" data-i18n="app.activityVideo">活动影片</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                
                 </div>
             </div>
         </footer>
@@ -156,38 +148,23 @@
                 });
         }
 
-        //function getCookie(cookieName) {
-        //    var name = cookieName + "=";
-        //    var ca = document.cookie.split(';');
-        //    for (var i = 0; i < ca.length; i++) {
-        //        var c = ca[i];
-        //        while (c.charAt(0) == ' ') c = c.substring(1);
-        //        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
-        //    }
-        //    return "";
-        //}
-
-        //function SetCookie(cookieName, cookieValue, exdays) {
-        //    if (document.cookie.indexOf(cookieName) >= 0) {
-        //        var expD = new Date();
-        //        expD.setTime(expD.getTime() + (-1 * 24 * 60 * 60 * 1000));
-        //        var uexpires = "expires=" + expD.toUTCString();
-        //        document.cookie = cookieName + "=" + cookieValue + "; " + uexpires;
-        //    }
-        //    var d = new Date();
-        //    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-        //    var expires = "expires=" + d.toUTCString();
-        //    document.cookie = cookieName + "=" + cookieValue + "; " + expires;
-        //}
 
         function SetLangBtn(lang) {
             if (lang == 'zh-cn') {
                 $('#simplified').addClass('active');
                 $('#traditional').removeClass('active');
+                $('#english').removeClass('active');
+            }
+            else if (lang == 'zh-TW') {
+                $('#simplified').removeClass('active');
+                $('#traditional').addClass('active');
+                $('#english').removeClass('active');
             }
             else {
                 $('#simplified').removeClass('active');
-                $('#traditional').addClass('active');
+                $('#traditional').removeClass('active');
+                $('#english').addClass('active');
+                
             }
         }
     </script>

@@ -1,4 +1,35 @@
-﻿
+﻿<style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+            .video-container iframe, .video-container object, .video-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+    </style>
+@*<script type="text/javascript">
+    function SetCwinHeight() {
+        var iframeid = document.getElementById("mainframe"); //iframe id
+        if (document.getElementById) {
+            if (iframeid && !window.opera) {
+                if (iframeid.contentDocument && iframeid.contentDocument.body.offsetHeight) {
+                    iframeid.height = iframeid.contentDocument.body.offsetHeight;
+                } else if (iframeid.Document && iframeid.Document.body.scrollHeight) {
+                    iframeid.height = iframeid.Document.body.scrollHeight;
+                }
+            }
+        }
+    }
+</script>*@
+
 <section class="hero-wrap hero-wrap-2" style="background-image: url(../../img/Foreword_Head1.jpg);">
     <div class="overlay"></div>
     <div class="container">
@@ -10,19 +41,30 @@
         </div>
     </div>
 </section>
-
-<section class="ftco-section ftco-counter">
+<section class="ftco-section2 ftco-counter">
     <div class="container">
         <div class="row justify-content-center mb-5 pb-2 d-flex">
-            <div class="col-md-6 align-items-stretch d-flex">
-
+            <div class="col-md-4 heading-section ftco-animate pl-lg-5 pt-md-0 pt-5">
+                <p data-i18n="">水森活~油切器產品介紹</p>
             </div>
-            <div class="col-md-6 heading-section ftco-animate pl-lg-5 pt-md-0 pt-5">
-                 Video is uncompleted
-            </div>
+            <div class="video-container col-md-8 align-items-stretch d-flex">
+                <iframe width="1280" height="720" onload="Javascript:SetCwinHeight()" src="https://www.youtube.com/embed/6eqbi5LSIGg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>         
         </div>
     </div>
 </section>
+@*<section class="ftco-section ftco-counter">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-2 d-flex">
+                <div class="col-md-6 align-items-stretch d-flex">
+                    水森活~油切器產品介紹
+                </div>
+                <div class="col-md-6 heading-section ftco-animate pl-lg-5 pt-md-0 pt-5 video-container">
+                    <iframe width="900" height="506" src="https://www.youtube.com/embed/6eqbi5LSIGg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>*@
 
 
 
