@@ -16,10 +16,10 @@
       <publishTime>09/29/2019 17:00:44</publishTime>
     </File>
     <File Include="bin/FuyuMarketOfficial.dll">
-      <publishTime>11/04/2019 03:56:40</publishTime>
+      <publishTime>11/07/2019 20:30:36</publishTime>
     </File>
     <File Include="bin/FuyuMarketOfficial.pdb">
-      <publishTime>11/04/2019 03:56:40</publishTime>
+      <publishTime>11/07/2019 20:30:36</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>09/29/2019 17:00:44</publishTime>
@@ -133,7 +133,7 @@
       <publishTime>09/29/2019 17:00:39</publishTime>
     </File>
     <File Include="Content/style.css">
-      <publishTime>11/04/2019 03:17:09</publishTime>
+      <publishTime>11/07/2019 20:28:39</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>09/29/2019 17:00:39</publishTime>
@@ -439,19 +439,19 @@
       <publishTime>10/14/2019 03:49:29</publishTime>
     </File>
     <File Include="Views/Home/ChairmanMessage.cshtml">
-      <publishTime>11/04/2019 02:24:12</publishTime>
+      <publishTime>11/07/2019 20:22:32</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
       <publishTime>09/29/2019 17:02:53</publishTime>
     </File>
     <File Include="Views/Home/Foreword.cshtml">
-      <publishTime>11/04/2019 02:36:25</publishTime>
+      <publishTime>11/07/2019 20:30:15</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
       <publishTime>10/14/2019 03:52:35</publishTime>
     </File>
     <File Include="Views/Home/MainPage.cshtml">
-      <publishTime>11/04/2019 00:55:54</publishTime>
+      <publishTime>11/07/2019 20:17:24</publishTime>
     </File>
     <File Include="Views/Home/TestIndex.cshtml">
       <publishTime>10/10/2019 15:24:58</publishTime>
@@ -463,7 +463,7 @@
       <publishTime>09/29/2019 17:00:39</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>11/03/2019 19:16:46</publishTime>
+      <publishTime>11/07/2019 20:18:18</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>09/29/2019 17:00:39</publishTime>
